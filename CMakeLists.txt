@@ -3,6 +3,15 @@ cmake_minimum_required(VERSION 3.5)
 project(CMakeOpenGL)
 find_package(OpenGL REQUIRED)
 
+set(Name_VAR_1 "TestVar1" CACHE STRING "Asdf")
+set(Name_VAR_2 False CACHE BOOL "bnm cs ")
+set(Name_VAR_3 "C:/" CACHE FILEPATH "cms ww d")
+
+option(Name_VAR_4 Bool False)
+option(Name_VAR_5 Bool True)
+#option(TEST_VAR_6 String "TestVar6")
+#option(TEST_VAR_7 Path "C:/")
+
 if(OPENGL_FOUND)
 	message("OpenGL found " ${OPENGL_FOUND})
 	message("OpenGL include dir" ${OPENGL_INCLUDE_DIR})
